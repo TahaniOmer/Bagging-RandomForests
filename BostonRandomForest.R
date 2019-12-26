@@ -79,7 +79,7 @@ legend("topright", c("m=p", "m=p/2", "m=sqrt(p)"), col = c("green", "red", "blue
 
 # use the randomForest(),with m=6 to perform randomForests
 
-rf.boston = randomForest(medv~.,Boston[train,],mtry = 5,ntree = 500,importance=0)
+rf.boston = randomForest(medv~.,Boston[train,],mtry = 6,ntree = 500,importance=0)
 rf.boston
 
 # see how well does this model perform on the test set
